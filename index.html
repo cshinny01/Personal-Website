@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+<body>
+<style>
+   div{
+      height: 40px;
+      width: 70%;
+      margin: 50px auto;
+      border-radius: 5px;
+      position: fixed;
+   }
+   .balls {
+    border-radius: 50%;
+    background: linear-gradient(
+      35deg,
+      #ccffff,
+      #ffcccc
+    );
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+    animation-name: bounce;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+  }
+  #ball1 {
+    left:27%;
+
+  }
+  #ball2 {
+    left:56%;
+
+  }
+  @keyframes bounce{
+
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 249px;
+      width: 130px;
+      height: 70px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+   #rect{
+      animation-name: rainbow;
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+   }
+   @keyframes rainbow{
+      0%{
+         background-color: red;
+         left: 0px;
+      }
+      50%{
+         background-color: green;
+	 left: 25px;
+	 opacity: 0.1;
+      }
+      100%{
+         background-color: yellow;
+          left: -25px;
+      }
+   }
+   body{
+      background-color: white;
+      color: blue;
+   }
+   h1 {
+      color: blue;
+      font-family: Lobster, monospace;
+   }
+   .border-color {
+      border-color: pink;
+      border-style: solid;
+      border-radius: 50%;
+   }
+  .passion{
+      color: blue;
+   }
+   
+</style>
+
+<h1>Welcome!</h1>
+<main>
+   <p>Chris's website</p>
+   
+   <a href="#"><img class = "border-color" src = "https://tr.rbxcdn.com/11578c56c49b18bcc201572a2dcb4e6e/150/150/AvatarHeadshot/Png"
+  alt="Chris's Roblox avatar"></a>
+
+   <div id = "rect">Work in Progress
+     <p class = "passion">Chris's passions:</p>
+     <ul>
+       <li><strong><u>Computer Science</strong></u></li>
+       <li><strong><u>Gaming</strong></u></li>
+     </ul>
+   </div>
+   <div class = "balls" id = "ball1">Lots of fun</div>
+   <div class = "balls" id = "ball2">Still not done</div>
+   <a href = "file:///D:/Old%20class%20work/Christopher%20Shin.pdf">Resume</a>
+   <a href = "https://github.com/cshinny01">My Github</a>
+   <a href = "project.htm" 
+</body>
+</html>
